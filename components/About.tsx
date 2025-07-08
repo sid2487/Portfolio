@@ -9,18 +9,18 @@ export default function About() {
 
       <div className="text-gray-300 text-base leading-relaxed space-y-4">
         <p>
-          I've always been fascinated by the magic of science and engineering,
+          {`I've always been fascinated by the magic of science and engineering,
           constantly exploring how they connect to the deeper meaning of life
-          and existence.
+          and existence.`}
         </p>
         <p>
           I believe in God and the beauty of purpose, balance, and quiet
           strength.
         </p>
         <p>
-          As an introvert, I find joy in quiet moments, reading
-         books, writing code, and losing myself in music.
-          It's how I recharge, reflect, and stay connected to what inspires me.
+          {`As an introvert, I find joy in quiet moments, reading
+          books, writing code, and losing myself in music.
+          It's how I recharge, reflect, and stay connected to what inspires me.`}
         </p>
       </div>
     </section>
