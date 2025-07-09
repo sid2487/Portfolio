@@ -26,28 +26,30 @@ export default function Project() {
 
   return (
     <section className="flex flex-col gap-6">
-      <h2 className="text-2xl font-semibold text-white border-b border-gray-700 pb-2">
+      <h2 className="text-2xl font-semibold text-black dark:text-white border-b border-gray-300 dark:border-gray-700 pb-2 transition-colors duration-300">
         Projects
       </h2>
 
       {projects.map((project, index) => (
         <div
           key={index}
-          className="flex flex-col sm:flex-row sm:justify-between sm:items-center bg-neutral-900 p-4 rounded-md shadow-md gap-2"
+          className="flex flex-col sm:flex-row sm:justify-between sm:items-center bg-white dark:bg-neutral-900 p-4 rounded-md shadow-md gap-2 transition-colors duration-300"
         >
-          
           <div>
-            <h3 className="text-white text-lg font-medium">{project.name}</h3>
-            <p className="text-gray-400">{project.description}</p>
+            <h3 className="text-black dark:text-white text-lg font-medium transition-colors duration-300">
+              {project.name}
+            </h3>
+            <p className="text-gray-800 dark:text-gray-400 transition-colors duration-300">
+              {project.description}
+            </p>
           </div>
 
-         
           <div className="flex gap-4 text-xl">
             <a
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-300 hover:text-white transition"
+              className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
               title="GitHub Repo"
             >
               <FaGithub />
@@ -56,7 +58,7 @@ export default function Project() {
               href={project.live}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-300 hover:text-white transition"
+              className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
               title="Live Project"
             >
               <FiExternalLink />

@@ -12,23 +12,29 @@ export default function Experience() {
 
   return (
     <section className="flex flex-col gap-6">
-      <h2 className="text-2xl font-semibold text-white border-b border-gray-700 pb-2">
+      <h2 className="text-2xl font-semibold text-black dark:text-white border-b border-gray-300 dark:border-gray-700 pb-2 transition-colors duration-300">
         Experience
       </h2>
 
       {exp.map((item, index) => (
         <div
           key={index}
-          className="flex flex-col sm:flex-row sm:justify-between sm:items-start bg-neutral-900 p-4 rounded-md shadow-md gap-2"
+          className="flex flex-col sm:flex-row sm:justify-between sm:items-start bg-white dark:bg-neutral-900 p-4 rounded-md shadow-md gap-2 transition-colors duration-300"
         >
-          {/* Left: Name and description */}
+          
           <div>
-            <h3 className="text-white text-lg font-medium">{item.name}</h3>
-            <p className="text-gray-400">{item.descriptions}</p>
+            <h3 className="text-black dark:text-white text-lg font-medium transition-colors duration-300">
+              {item.name}
+            </h3>
+            <p className="text-gray-800 dark:text-gray-400 transition-colors duration-300">
+              {item.descriptions}
+            </p>
           </div>
 
-          {/* Right: Date */}
-          <p className="text-sm text-gray-400">{item.date}</p>
+         
+          <p className="text-sm text-gray-700 dark:text-gray-400 transition-colors duration-300">
+            {item.date}
+          </p>
         </div>
       ))}
     </section>

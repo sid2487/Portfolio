@@ -14,10 +14,12 @@ export default function Header() {
       </div>
 
       <div>
-        <h1 className="text-3xl font-bold text-white tracking-wide">
+        <h1 className="text-3xl font-bold text-black dark:text-white tracking-wide">
           Siddharth Mishra
         </h1>
-        <p className="text-gray-400 text-sm mt-1">engineer</p>
+        <p className="text-gray-900 dark:text-gray-400 text-sm mt-1">
+          engineer
+        </p>
       </div>
     </header>
   );
