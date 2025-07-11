@@ -17,9 +17,9 @@ export default function Project() {
       live: "https://syncly-git-main-siddharths-projects-a91d5754.vercel.app/",
     },
     {
-      name: "Finly",
+      name: "Fynly",
       description: "A budget management platform",
-      github: "https://github.com/sid2487/Finly.git",
+      github: "https://github.com/sid2487/Fynly.git",
       live: "#",
     },
   ];
