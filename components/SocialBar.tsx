@@ -1,11 +1,11 @@
 "use client";
 
 import { FaGithub, FaLinkedin, FaEnvelope, FaXTwitter } from "react-icons/fa6";
-import { MdOutlineLightMode } from "react-icons/md";
+import { MdOutlineLightMode, MdDarkMode } from "react-icons/md";
 import { useTheme } from "@/app/hooks/useTheme";
 
 export default function SocialBar() {
-  const { toggleTheme } = useTheme();
+  const { toggleTheme, theme } = useTheme();
 
   return (
     <div
@@ -52,7 +52,11 @@ export default function SocialBar() {
         className="hover:text-yellow-600 dark:hover:text-yellow-300 transition-colors"
         title="Toggle Theme"
       >
-        <MdOutlineLightMode size={20} />
+        {theme === "dark" ? (
+          <MdDarkMode size={20} />
+        ) : (
+          <MdOutlineLightMode size={20} />
+        )}
       </button>
     </div>
   );
