@@ -20,7 +20,7 @@ export default function Project() {
       name: "Fynly",
       description: "A budget management platform",
       github: "https://github.com/sid2487/Fynly.git",
-      live: "#",
+      live: "https://fynly-5fj3.vercel.app/",
     },
   ];
 
