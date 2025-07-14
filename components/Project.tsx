@@ -5,10 +5,10 @@ import { FiExternalLink } from "react-icons/fi";
 export default function Project() {
   const projects = [
     {
-      name: "Eduverse",
-      description: "A course selling platform",
-      github: "https://github.com/sid2487/EduVerse.git",
-      live: "https://edu-verse-vert.vercel.app/",
+      name: "Fynly",
+      description: "A budget management platform",
+      github: "https://github.com/sid2487/Fynly.git",
+      live: "https://fynly-5fj3.vercel.app/",
     },
     {
       name: "Syncly",
@@ -17,10 +17,10 @@ export default function Project() {
       live: "https://syncly-git-main-siddharths-projects-a91d5754.vercel.app/",
     },
     {
-      name: "Fynly",
-      description: "A budget management platform",
-      github: "https://github.com/sid2487/Fynly.git",
-      live: "https://fynly-5fj3.vercel.app/",
+      name: "Eduverse",
+      description: "A course selling platform",
+      github: "https://github.com/sid2487/EduVerse.git",
+      live: "https://edu-verse-vert.vercel.app/",
     },
   ];
 
