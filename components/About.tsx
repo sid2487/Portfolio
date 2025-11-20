@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-
 export default function About() {
   return (
     <section className="flex flex-col gap-6 bg-white/50 dark:bg-neutral-900/50 p-6 rounded-md shadow-md backdrop-blur-sm transition-colors duration-300">
