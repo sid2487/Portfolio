@@ -10,7 +10,9 @@ export default function SocialBar() {
   return (
     <div
       className="fixed bottom-4 left-1/2 -translate-x-1/2 px-6 py-3 rounded-full flex items-center gap-5 shadow-lg z-50
-                    bg-white/60 dark:bg-neutral-900/60 backdrop-blur-sm text-black dark:text-white transition-colors duration-300"
+             bg-white/60 dark:bg-neutral-900/60 backdrop-blur-sm text-black dark:text-white 
+             transition-all duration-300 ease-in-out transform
+             hover:scale-105 hover:shadow-xl hover:bg-white/80 dark:hover:bg-neutral-800/80"
     >
       <a
         href="https://github.com/sid2487"

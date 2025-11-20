@@ -7,9 +7,25 @@ export default function Project() {
     {
       name: "Fynly",
       description: "A budget management platform",
-      tech: ["NextJS", "Prism", "Clerk", "Tailwind", "Postgres", "Typescript"],
+      tech: ["NextJS", "Prisma", "Clerk", "Tailwind", "Postgres", "Typescript"],
       github: "https://github.com/sid2487/Fynly.git",
       live: "https://fynly-5fj3.vercel.app/",
+    },
+    {
+      name: "AI Resume Roaster",
+      description: "Roast your resume",
+      tech: [
+        "NextJS",
+        "Prisma",
+        "PostgreSQL",
+        "Next-Auth",
+        "Tailwind",
+        "Postgres",
+        "Typescript",
+        "	Groq API",
+      ],
+      github: "https://github.com/sid2487/AI-Resume-Roaster.git",
+      live: "https://ai-resume-roaster.vercel.app/",
     },
     {
       name: "Syncly",
