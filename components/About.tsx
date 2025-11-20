@@ -14,9 +14,7 @@ export default function About() {
           {`Trying to be useful!`}
         </p>
 
-        {/* <Link href="/blogs" className="text-blue-600 hover:underline">
-          Read Blogs
-        </Link> */}
+        
       </div>
     </section>
   );
