@@ -5,6 +5,23 @@ import { FiExternalLink } from "react-icons/fi";
 export default function Project() {
   const projects = [
     {
+      name: "Group Chat-App",
+      description: "Full Stack Group Chat-App",
+      tech: [
+        "Turborepo",
+        "HTTP",
+        "WebSocket",
+        "NextJS",
+        "Prisma",
+        "NeonDB",
+        "Tailwind",
+        "Postgres",
+        "Typescript",
+      ],
+      github: "https://github.com/sid2487/Group-Chat-App.git",
+      live: "https://github.com/sid2487/Group-Chat-App.git",
+    },
+    {
       name: "Fynly",
       description: "A budget management platform",
       tech: ["NextJS", "Prisma", "Clerk", "Tailwind", "Postgres", "Typescript"],
