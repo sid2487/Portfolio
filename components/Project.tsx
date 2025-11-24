@@ -9,7 +9,7 @@ export default function Project() {
       description: "Full Stack Group Chat-App",
       tech: [
         "Turborepo",
-        "HTTP",
+        "Node.js + Express",
         "WebSocket",
         "NextJS",
         "Prisma",
@@ -44,7 +44,6 @@ export default function Project() {
       github: "https://github.com/sid2487/AI-Resume-Roaster.git",
       live: "https://ai-resume-roaster.vercel.app/",
     },
-    
   ];
 
   const borderColors = [
