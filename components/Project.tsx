@@ -44,41 +44,7 @@ export default function Project() {
       github: "https://github.com/sid2487/AI-Resume-Roaster.git",
       live: "https://ai-resume-roaster.vercel.app/",
     },
-    {
-      name: "Syncly",
-      description: "A language learning platform",
-      tech: [
-        "ReactJs",
-        "Tanstack",
-        "Tailwind",
-        "DaisyUI",
-        "NodeJs",
-        "ExpressJs",
-        "MongoDB",
-        "Mongoose",
-        "Zustand",
-        "Stream Chat API",
-      ],
-      github: "https://github.com/sid2487/Syncly.git",
-      live: "https://syncly-git-main-siddharths-projects-a91d5754.vercel.app/",
-    },
-    {
-      name: "Eduverse",
-      description: "A course selling platform",
-      tech: [
-        "ReactJs",
-        "Tailwind",
-        "NodeJs",
-        "ExpressJs",
-        "Multer",
-        "Cloudinary",
-        "MongoDB",
-        "Mongoose",
-        "Stripe",
-      ],
-      github: "https://github.com/sid2487/EduVerse.git",
-      live: "https://edu-verse-vert.vercel.app/",
-    },
+    
   ];
 
   const borderColors = [
