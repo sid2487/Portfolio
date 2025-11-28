@@ -2,9 +2,20 @@
 
 import { useEffect, useState } from "react";
 
+type ContributionDay = {
+  date: string;
+  color: string;
+  contributionCount: number;
+};
+
+type Week = {
+  contributionDays: ContributionDay[];
+};
+
 export default function GithubCalendar() {
-  const [weeks, setWeeks] = useState<any[]>([]);
+  const [weeks, setWeeks] = useState<Week[]>([]);
   const [loading, setLoading] = useState(true);
+
 
   useEffect(() => {
     async function load() {
