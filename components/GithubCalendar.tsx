@@ -8,12 +8,20 @@ type ContributionDay = {
   contributionCount: number;
 };
 
+type Month = {
+  name: string;
+  year: number;
+  firstDay: string;
+};
+
 type Week = {
   contributionDays: ContributionDay[];
 };
 
 export default function GithubCalendar() {
   const [weeks, setWeeks] = useState<Week[]>([]);
+  const [months, setMonths] = useState<Month[]>([]);
+  const [total, setTotal] = useState<number>(0);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -22,17 +30,19 @@ export default function GithubCalendar() {
         const res = await fetch("/api/github-calendar");
         const json = await res.json();
 
-        if (!json.data || !json.data.viewer) {
-          console.error("GitHub API error:", json);
-          setWeeks([]);
+        if (!json.data?.viewer) {
+          console.error("GitHub API failed:", json);
           setLoading(false);
           return;
         }
 
-        const weeksData =
-          json.data.viewer.contributionsCollection.contributionCalendar.weeks;
+        const cal =
+          json.data.viewer.contributionsCollection.contributionCalendar;
 
-        setWeeks(weeksData);
+        setWeeks(cal.weeks);
+        setMonths(cal.months);
+        setTotal(cal.totalContributions);
+
         setLoading(false);
       } catch (error) {
         console.error("Request failed:", error);
@@ -47,17 +57,20 @@ export default function GithubCalendar() {
 
   return (
     <div style={{ marginTop: "40px" }}>
-      <h2 className="text-xl font-semibold mb-3">
-        GitHub Contributions
+      <h2 className="text-xl font-semibold mb-2">
+        {total} contributions in the last year
       </h2>
+
+      <div className="flex text-sm text-gray-500 dark:text-gray-400 mb-2 pl-2 gap-10">
+        {months.map((month, i) => (
+          <span key={i}>{month.name}</span>
+        ))}
+      </div>
 
       <div className="overflow-x-auto">
         <div className="flex gap-[4px] min-w-max pl-1">
           {weeks.map((week, i) => (
-            <div
-              key={i}
-              className="flex flex-col gap-[4px]"
-            >
+            <div key={i} className="flex flex-col gap-[4px]">
               {week.contributionDays.map((day, j) => (
                 <div
                   key={j}
