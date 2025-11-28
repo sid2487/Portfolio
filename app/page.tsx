@@ -6,6 +6,7 @@ import Project from "@/components/Project";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import Skills from "@/components/Skills";
+import GithubCalendar from "@/components/GithubCalendar"
 
 export default function HomePage() {
   return (
@@ -15,8 +16,8 @@ export default function HomePage() {
       <Project />
       <Experience />
       <Education />
+      <GithubCalendar />
       <Skills />
-
 
       <SocialBar />
     </Layout>
