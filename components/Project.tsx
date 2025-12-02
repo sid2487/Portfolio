@@ -5,6 +5,26 @@ import { FiExternalLink } from "react-icons/fi";
 export default function Project() {
   const projects = [
     {
+      name: "Git Clash",
+      description: "ELO-Based Developer Ranking Arena",
+      tech: [
+        "Next.js",
+        "TailwindCSS",
+        "Next.js Server Actions & Routes",
+        "NeonDB (PostgreSQL)",
+        "Prisma",
+        "Upstash Redis",
+        "SSE(Server Sent Events)",
+        "NeonDB",
+        "Upstash QStash Cron",
+        "Browser fingerprint + secure cookies",
+        "Typescript",
+        "Vercel",
+      ],
+      github: "https://github.com/sid2487/Git-Clash.git",
+      live: "https://git-clash.vercel.app/",
+    },
+    {
       name: "Group Chat-App",
       description: "Full Stack Group Chat-App",
       tech: [
@@ -17,6 +37,7 @@ export default function Project() {
         "Tailwind",
         "Postgres",
         "Typescript",
+        "Vercel",
       ],
       github: "https://github.com/sid2487/Group-Chat-App.git",
       live: "https://github.com/sid2487/Group-Chat-App.git",
@@ -40,6 +61,7 @@ export default function Project() {
         "Postgres",
         "Typescript",
         "	Groq API",
+        "Vercel",
       ],
       github: "https://github.com/sid2487/AI-Resume-Roaster.git",
       live: "https://ai-resume-roaster.vercel.app/",
