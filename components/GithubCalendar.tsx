@@ -8,11 +8,6 @@ type ContributionDay = {
   contributionCount: number;
 };
 
-type Month = {
-  name: string;
-  year: number;
-  firstDay: string;
-};
 
 type Week = {
   contributionDays: ContributionDay[];
