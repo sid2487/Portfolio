@@ -20,7 +20,6 @@ type Week = {
 
 export default function GithubCalendar() {
   const [weeks, setWeeks] = useState<Week[]>([]);
-  const [months, setMonths] = useState<Month[]>([]);
   const [total, setTotal] = useState<number>(0);
   const [loading, setLoading] = useState(true);
 
@@ -40,7 +39,6 @@ export default function GithubCalendar() {
           json.data.viewer.contributionsCollection.contributionCalendar;
 
         setWeeks(cal.weeks);
-        setMonths(cal.months);
         setTotal(cal.totalContributions);
 
         setLoading(false);
@@ -61,11 +59,7 @@ export default function GithubCalendar() {
         {total} contributions in the last year
       </h2>
 
-      {/* <div className="flex text-sm text-gray-500 dark:text-gray-400 mb-2 pl-2 gap-10 overflow-x-auto">
-        {months.map((month, i) => (
-          <span key={i}>{month.name}</span>
-        ))}
-      </div> */}
+      
 
       <div className="relative overflow-x-auto">
         <div
