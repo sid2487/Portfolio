@@ -9,7 +9,7 @@ export default function About() {
 
       <div className="text-gray-800 dark:text-gray-300 text-base leading-relaxed space-y-4">
         <p>
-          {`Whats outside the simulation?`}
+          {`Full Stack Developer`}
         </p>
 
         
