@@ -12,7 +12,7 @@ export default function Experience() {
     {
       name: "Riz Software Consultancy",
       descriptions: "Currently working as a Software Developer.",
-      date: "Feb 2026 - Present",
+      date: "Jan 2026 - Present",
     },
   ];
 
