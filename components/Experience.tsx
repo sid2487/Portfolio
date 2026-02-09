@@ -8,6 +8,12 @@ export default function Experience() {
         "Worked on React Native, learned about UI design and API integrations.",
       date: "Apr 2024 - May 2024",
     },
+
+    {
+      name: "Riz Software Consultancy",
+      descriptions: "Currently working as a Software Developer.",
+      date: "Feb 2026 - Present",
+    },
   ];
 
   return (
