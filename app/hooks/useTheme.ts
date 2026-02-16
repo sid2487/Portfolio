@@ -11,7 +11,9 @@ export const useTheme = () => {
     const stored = localStorage.getItem("theme") as Theme | null;
     const currentTheme = stored || "dark";
 
+    document.documentElement.classList.remove("light", "dark");
     document.documentElement.classList.add(currentTheme);
+
     setTheme(currentTheme);
   }, []);
 

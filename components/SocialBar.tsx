@@ -1,6 +1,6 @@
 "use client";
 
-import { FaGithub, FaLinkedin, FaEnvelope, FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaEnvelope, FaXTwitter, FaFileArrowDown } from "react-icons/fa6";
 import { MdOutlineLightMode, MdDarkMode } from "react-icons/md";
 import { useTheme } from "@/app/hooks/useTheme";
 
@@ -55,6 +55,19 @@ export default function SocialBar() {
       >
         <FaXTwitter size={20} />
       </a>
+
+      <a
+        href="/sid.pdf"
+        download="Siddharth_Mishra_Resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:scale-110 hover:text-gray-700 dark:hover:text-gray-300 transition-transform"
+        title="Download Resume"
+      >
+        <FaFileArrowDown size={20} />
+      </a>
+
+
 
       <button
         onClick={toggleTheme}
