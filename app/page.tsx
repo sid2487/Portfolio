@@ -7,6 +7,7 @@ import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import Skills from "@/components/Skills";
 import GithubCalendar from "@/components/GithubCalendar"
+import Contributions from "@/components/Contributions";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <About />
       <Project />
       <Experience />
+      <Contributions />
       <Education />
       <GithubCalendar />
       <Skills />
