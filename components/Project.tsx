@@ -85,9 +85,8 @@ export default function Project() {
           className={
             `relative flex flex-col sm:flex-row sm:justify-between sm:items-center
              bg-white dark:bg-neutral-900 p-5 rounded-lg shadow-lg gap-4 transition-colors duration-300
-             hover:shadow-xl hover:scale-[1.01] ${
-               borderColors[index % borderColors.length]
-             }`
+             hover:shadow-xl hover:scale-[1.01] ${borderColors[index % borderColors.length]
+            }`
           }
         >
           <div className="">

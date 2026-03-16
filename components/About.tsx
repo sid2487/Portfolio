@@ -12,7 +12,7 @@ export default function About() {
           {`Full Stack Developer`}
         </p>
 
-        
+
       </div>
     </section>
   );
