@@ -57,7 +57,7 @@ export default function SocialBar() {
       </a>
 
       <a
-        href="/sid.pdf"
+        href="/sid2.pdf"
         download="Siddharth_Mishra_Resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
