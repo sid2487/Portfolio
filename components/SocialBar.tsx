@@ -19,7 +19,7 @@ export default function SocialBar() {
       "
     >
       <a
-        href="https://github.com/sid2487"
+        href="https://github.com/siddocode"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:scale-110 hover:text-gray-700 dark:hover:text-gray-300 transition-transform"
