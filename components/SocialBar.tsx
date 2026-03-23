@@ -29,7 +29,7 @@ export default function SocialBar() {
       </a>
 
       <a
-        href="https://www.linkedin.com/in/siddharth-mishra-02402b243/"
+        href="https://www.linkedin.com/in/siddocode/"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:scale-110 hover:text-gray-700 dark:hover:text-gray-300 transition-transform"
@@ -66,8 +66,6 @@ export default function SocialBar() {
       >
         <FaFileArrowDown size={20} />
       </a>
-
-
 
       <button
         onClick={toggleTheme}
